@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root {
@@ -193,8 +192,6 @@ main {
   color: #c6f58a;
 }
 
-
-
 #camera-button {
   background: transparent;
   border: 1px solid #a5d873;
@@ -218,15 +215,12 @@ main {
   display: none;
 }
 
-/* CRT scanlines */
-
 .scanlines {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 10;
   opacity: 0.15;
-
   background: repeating-linear-gradient(
     to bottom,
     transparent 0px,
@@ -235,27 +229,21 @@ main {
   );
 }
 
-/* Screen noise */
-
 .screen-noise {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 11;
   opacity: 0.055;
-
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
 }
-
-/* Screen vignette */
 
 .vignette {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 12;
-
   box-shadow: inset 0 0 100px 25px rgba(0, 0, 0, 0.65);
 }
 
@@ -276,10 +264,6 @@ main {
     font-size: 8px;
   }
 }
-
-/* ==========================================
-   MONOCHROME ASCII EYE THEME
-========================================== */
 
 :root {
   color: #d6d6d6;
@@ -356,7 +340,3 @@ footer {
 .vignette {
   box-shadow: inset 0 0 100px 25px rgba(0, 0, 0, 0.7);
 }
-
-/* ==========================================
-   CONFINED ASCII DISPLAY
-========================================== */
