@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Watcher</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <div class="system-icon">
+        404
+      </div>
+
+      <div class="header-text">
+        THE WATCHER
+      </div>
+
+      <div class="system-status">
+        <span class="status-light"></span>
+        <span id="system-status">STANDBY</span>
+      </div>
+    </header>
+    <main>
+      <section class="eye-container">
+        <div class="eye-label">
+          <span>VISUAL RECOGNITION UNIT</span>
+          <span>CAM 01</span>
+        </div>
+
+        <div id="eye-canvas"></div>
+        <div class="eye-overlay"></div>
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+      </section>
+
+      <section class="terminal">
+        <div class="terminal-message" id="terminal-message">
+          &gt; AWAITING MOVEMENT. SYSTEM DORMANT.
+        </div>
+        <button id="camera-button">
+          ENABLE CAMERA 
+        </button>
+      </section>
+    </main>
+
+    <video id="webcam" autoplay playsinline muted></video>
+    <div class="scanlines"></div>
+    <div class="screen-noise"></div>
+    <div class="vignette"></div>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
