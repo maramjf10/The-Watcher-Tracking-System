@@ -61,7 +61,3 @@ npm install
 # run
 npm run dev
 ```
-
-```bash
-npm run dev
-```
